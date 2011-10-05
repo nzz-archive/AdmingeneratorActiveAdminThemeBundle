@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}Admin{% endblock %}</title>
+        {% block stylesheets %}
+            {% stylesheets '@AdmingeneratorActiveAdminThemeBundle/Resources/public/css/_base.css.scss'
+                           filter='sass'
+             %}
+                <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
+            {% endstylesheets %}
+        {% endblock %}
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ asset("bundles/admingeneratorgenerator/javascripts/jquery-1.6.4.min.js") }}">\x3C/script>')</script>
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body class="logged_in index">
+        <div id="wrapper">
+            <div id="header">
+                {% block header %}
+                    {% block logo %}
+                    <div class="site_title">
+                        Admin
+                    </div>
+                    {% endblock %}
+                    {% block profile %}
+                    <div class="profile">
+                        <ul>
+                            <li>
+                                <a href="#">Welcome</a>
+                            </li>
+                            <li>
+                                <a class='logout' href="#">Log out will be connect to security</a>
+                            </li>
+                        </ul>
+                    </div>
+                    {% endblock %}
+                    {% block menu %}
+                         {{ knp_menu_render('admin') }}
+                    {% endblock %}
+                {% endblock %}
+            </div>
+            <div id="content">
+                {% block flashes %}
+                    {% if app.session.flash('success') %}
+                        <div class="notification_box success">
+                            {{ app.session.flash('success') }}
+                        </div>
+                    {% endif %}
+                    {% if app.session.flash('error') %}
+                        <div class="notification_box error">
+                            {{ app.session.flash('error') }}
+                        </div>
+                    {% endif %}
+                {% endblock %}
+    
+                {% block body %}{% endblock %}
+            </div>
+        </div>
+        {% block javascripts %}
+            {% javascripts '@AdmingeneratorGeneratorBundle/Resources/public/javascripts/menu.js'
+             %}
+                <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+            <script type="text/javascript">
+                var menu=new menu.dd("menu");
+                menu.init("main_navigation","mainhover");
+            </script>
+        {% endblock %}
+    </body>
+</html>
