@@ -24,7 +24,7 @@ body {
 }
 
 // ----------------------------------- Page Title Bar 
-#title_bar {
+#body_content h1 {
   @include section-header;
   @include clearfix;
   @include box-sizing(border-box);
@@ -33,6 +33,9 @@ body {
   position: relative; 
   margin: 0; 
   padding: 10px $horizontal-page-margin; 
+  margin: 0;
+  font-size: 2.6em;
+  font-weight: bold;
 
   #titlebar_left, #titlebar_right {
     height: 50px;
@@ -44,13 +47,6 @@ body {
     text-align: right;
   }
   
-  h2 { 
-    margin: 0;
-    padding: 0; 
-    font-size: 2.6em;
-    font-weight: bold;
-  }
-
   .action_items { 
     a { 
       @include light-button; 
@@ -74,11 +70,12 @@ body {
 
 #body_content { 
   margin: 0; 
-  padding: 25px $horizontal-page-margin; 
+  
   
   .main_content { 
     float: left; 
     width: 80%; 
+    padding: 25px $horizontal-page-margin; 
   }
 
   &.without_sidebar #main_content_wrapper #main_content{ margin-right: 0; }
