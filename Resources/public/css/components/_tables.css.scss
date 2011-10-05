@@ -8,7 +8,7 @@ table tr {
 
 // --------- Index Tables 
 
-table.index_table {
+.main_content table{
   width: 100%;
   margin-bottom: 10px;
   border: 0;
@@ -50,7 +50,7 @@ table.index_table {
 
 // --------- Tables inside Panels
 
-.panel_contents table {
+.filters table {
   margin-top: 5px;
   th { 
     padding-top: 10px;

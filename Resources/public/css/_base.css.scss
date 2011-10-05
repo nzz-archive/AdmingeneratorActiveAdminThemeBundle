@@ -72,17 +72,13 @@ body {
   width: 100%;
 }
 
-#active_admin_content { 
+#body_content { 
   margin: 0; 
   padding: 25px $horizontal-page-margin; 
   
-  #main_content_wrapper { 
+  .main_content { 
     float: left; 
-    width: 100%; 
-
-    #main_content{ 
-      margin-right: 300px; 
-    }
+    width: 80%; 
   }
 
   &.without_sidebar #main_content_wrapper #main_content{ margin-right: 0; }
@@ -94,6 +90,12 @@ body {
   }
 }
 
+.filters {
+    width: 16%;
+    float: left;
+    marign-left:30px;
+   
+}
 // ----------------------------------- Footer 
 #footer {
   padding: 30px 30px;  
@@ -190,7 +192,7 @@ a.button, input[type=submit] { @include dark-button; }
 .sidebar_section { @include section; }
 
 // -------------------------------------- Pagination 
-.pagination_information { 
+div.pagination{ 
   float: right;
   margin-bottom: 5px;
   font-size: 0.95em;
@@ -202,19 +204,19 @@ a.button, input[type=submit] { @include dark-button; }
   clear: both;
 }
 
-.pagination { 
+.pagination li { 
   display: inline; 
   font-size: 0.9; 
   margin-left: 10px; 
 
   a { @include light-button; }
-  span.page.current { @include default-button; }
-  a, span.page.current { 
+  .current { @include default-button; }
+  a, .current { 
     @include rounded(0px);
     margin-right: 4px; 
     padding: 2px 5px;
   }
-  span.page.current { padding-left: 7px; }
+  .current { padding-left: 7px; }
 }
 
 // -------------------------------------- Index Footer (Under Table) 
