@@ -59,15 +59,5 @@
                 </div>
             </div>
         </div>
-        {% block javascripts %}
-            {% javascripts '@AdmingeneratorGeneratorBundle/Resources/public/javascripts/menu.js'
-             %}
-                <script type="text/javascript" src="{{ asset_url }}"></script>
-            {% endjavascripts %}
-            <script type="text/javascript">
-                var menu=new menu.dd("menu");
-                menu.init("main_navigation","mainhover");
-            </script>
-        {% endblock %}
     </body>
 </html>
