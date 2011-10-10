@@ -359,3 +359,25 @@ table.dashboard {
   padding: 0;
   .column { float: left; }
 }
+
+.main_content .list_nbresults {
+  text-align: right;
+  color: #B3BCC1;
+  font-size: 0.95em;
+  margin-bottom: 5px;
+  b {
+    color: #5C6469;
+  }
+}
+
+.main_content ul.actions {
+  list-style-type: none;
+  margin: 5px 0 0 0; 
+  padding: 0;
+  li {
+    margin-right: 5px;
+    padding: 0;
+    display: inline-block;
+    a { @include light-bigger-button; }
+  }
+}

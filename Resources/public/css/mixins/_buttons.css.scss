@@ -25,3 +25,9 @@
 }
 
 @mixin dark-button { @include default-button; }
+
+@mixin light-bigger-button {
+  @include light-button;
+  @include gradient(#f9f9f9, #dddbdb);
+  border: 1px solid #f8f8f8;
+}
