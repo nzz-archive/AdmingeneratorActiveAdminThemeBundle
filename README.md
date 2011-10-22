@@ -49,3 +49,5 @@ Publish assets:
 ````
     php app/console assets:install web/
 ````
+
+This theme use Super Mono Icons from Double-J Design (http://www.doublejdesign.co.uk)
