@@ -5,7 +5,7 @@
         <title>{% block title %}Admin{% endblock %}</title>
         {% block stylesheets %}
             {% stylesheets '@AdmingeneratorActiveAdminThemeBundle/Resources/public/css/_base.css.scss'
-                           filter='sass'
+                           filter='compass'
              %}
                 <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="all" />
             {% endstylesheets %}
