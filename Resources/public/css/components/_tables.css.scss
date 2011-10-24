@@ -27,7 +27,8 @@ table tr {
     }
 
     &.sortable a {
-      background: url(active_admin_image_path('orderable.png')) no-repeat 0 4px; padding-left: 13px;
+      background: url('/bundles/admingeneratoractiveadmintheme/images/orderable.png') no-repeat 0 4px;
+      padding-left: 13px;
     }
 
     &.sorted-asc a { background-position: 0 -27px; }
