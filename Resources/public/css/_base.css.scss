@@ -329,23 +329,28 @@ table.dashboard {
 
 
 // -------------------------------------- Scopes
-.scopes {
+.list_scopes {
   float: left;
   margin-bottom: 10px;
   font-size: 1.0em;
 
-  .scope {
-    padding: 4px 8px 3px 8px;
-    margin-right: 4px;
-    a { text-decoration: none; font-weight: bold; color: #888; }
-    a:hover { text-decoration: underline; ; }
-    &.selected { 
-      @include rounded(5px);
-      @include inset-shadow(0,1px,0,#ccc);
-      @include text-shadow;
-      background: #efefef;
-      color: #666;
-      em { font-weight: bold; font-style: normal;  
+  .list_scope_group {
+    float: left;
+    padding-right: 16px;
+    a {
+      padding: 4px 8px 3px 8px;
+      margin-right: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #888;
+      &:hover { text-decoration: underline; }
+      &.active { 
+        @include rounded(5px);
+        @include inset-shadow(0,1px,0,#ccc);
+        @include text-shadow;
+        background: #efefef;
+        color: #666;
+        em { font-weight: bold; font-style: normal; }
       }
     }
     .count{ color: #aaa; font-size: 0.9em; }
