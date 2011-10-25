@@ -52,15 +52,10 @@ table tr {
 // --------- Tables inside Panels
 
 .filters table {
-  margin-top: 5px;
+  margin-top: 15px;
+  @include section;
   th { 
-    padding-top: 10px;
-    background: none;
-    color: $primary-color;
-    @include no-shadow;
-    @include text-shadow;
-    text-transform: uppercase;
-    border-bottom: 1px solid #ccc;
+    @include section-header;
   }
   tr.odd td { background: darken($table-stripe-color, 3%); }
   tr.even td { background: $table-stripe-color; }
