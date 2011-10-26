@@ -76,6 +76,9 @@ form {
   /* Text Fields */
   input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], textarea {
     width: 76%;
+  }
+  
+  input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], textarea, select {
     border: 1px solid #c9d0d6;
     @include rounded;
     font-size: 0.95em;
@@ -181,7 +184,7 @@ form {
 
 $sidebar-inner-content-width: $sidebar-width - ($section-padding * 2);
 
-.sidebar_section { 
+.filters table { 
 
   label {
     display: block;
@@ -189,10 +192,6 @@ $sidebar-inner-content-width: $sidebar-width - ($section-padding * 2);
     color: $section-header-text-color;
     font-size: 0.9em;
     font-weight: bold;
-  }
-
-  select {
-    width: $sidebar-inner-content-width;
   }
   
   input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], textarea {

@@ -54,9 +54,29 @@ table tr {
 .filters table {
   margin-top: 15px;
   @include section;
+  td {
+    margin: 0;
+    padding: 0;
+  }
   th { 
     @include section-header;
   }
   tr.odd td { background: darken($table-stripe-color, 3%); }
   tr.even td { background: $table-stripe-color; }
+  form {
+    padding: 8px 15px 15px;
+    fieldset {
+      padding: 0;
+      margin: 0;
+    }
+    ul.actions {
+      margin-top: 15px;
+      .reset_button {
+        @include light-button;
+      }
+      input[type=submit] {
+        margin-right: 10px;
+      }
+    }
+  }
 }
