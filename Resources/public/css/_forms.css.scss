@@ -9,14 +9,21 @@ form {
     padding: 10px 0;
     margin-bottom: 20px;
 
-    &.inputs { @include section-background; }
+    &.form_block {
+      @include section-background;
+      h2 {
+        @include text-shadow;
+        color: $section-header-text-color;
+        margin: 0 10px 0;
+      }
+    }
 
     legend {
       width: 100%;
       span { display: block; @include section-header; }
     }
 
-    ol > li {
+    .form_row {
       padding: 10px;
       label {
         display: block;
@@ -26,6 +33,21 @@ form {
         font-weight: bold;
         color: $section-header-text-color;
         abbr { border: none; color: #aaa; }
+      }
+      
+      .form_field {
+        .type_collection {
+          clear: both;
+          margin-left: 20px;
+          
+          & > div > div > label {
+            float: none;
+          }
+          
+          & > div > div > div {
+            margin-left: 20px;
+          }
+        }
       }
     }
 
@@ -178,6 +200,19 @@ form {
     &.cancel { margin-left: 0.3em; padding: 5px; a { @include light-button; @include icon(#777, 9px);} }
   }
 
+  ul.actions {
+    display: inline;
+    li {
+      display: inline;
+      margin: 0 10px;
+    }
+  }
+
+  a.list, a.new {
+    @include light-button;
+    @include icon(#777, 9px);
+    text-decoration: none;
+  }
 }
 
 // -------------------------------------- Sidebar Forms 
@@ -186,12 +221,14 @@ $sidebar-inner-content-width: $sidebar-width - ($section-padding * 2);
 
 .filters table { 
 
-  label {
+  label, form fieldset label {
     display: block;
     text-transform: uppercase;
     color: $section-header-text-color;
     font-size: 0.9em;
     font-weight: bold;
+    float: none;
+    width: auto;
   }
   
   input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], textarea {
@@ -253,4 +290,3 @@ form.filter_form {
   }
   a.clear_filters_btn { @include light-button; }
 }
-

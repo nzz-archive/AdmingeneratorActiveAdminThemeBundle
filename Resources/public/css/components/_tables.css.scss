@@ -68,6 +68,9 @@ table tr {
     fieldset {
       padding: 0;
       margin: 0;
+      background: none;
+      @include rounded(0px);
+      @include inset-shadow(0,0px,0px, #ddd);
     }
     ul.actions {
       margin-top: 15px;
