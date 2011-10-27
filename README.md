@@ -1,4 +1,4 @@
-# The rails admin theme for the symfony2 generator
+# The rails admin theme for the symfony2 generator ![project status](http://stillmaintained.com/cedriclombardot/AdmingeneratorActiveAdminThemeBundle.png)#
 
 AdmingeneratorActiveAdminTheme is a theme for the [AdmingeneratorGeneratorBundle](https://github.com/cedriclombardot/AdmingeneratorGeneratorBundle)
 
