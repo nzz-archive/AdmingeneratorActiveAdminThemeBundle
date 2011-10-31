@@ -11,10 +11,11 @@ form {
 
     &.form_block {
       @include section-background;
-      h2 {
+      legend {
         @include text-shadow;
         color: $section-header-text-color;
-        margin: 0 10px 0;
+        padding: 0 10px 0;
+        font-size: 1.4em;
       }
     }
 
@@ -24,29 +25,55 @@ form {
     }
 
     .form_row {
+      clear: left;
       padding: 10px;
-      label {
-        display: block;
-        width: 20%;
-        float: left;
-        font-size: 1.0em;
-        font-weight: bold;
-        color: $section-header-text-color;
-        abbr { border: none; color: #aaa; }
-      }
       
       .form_field {
+        float: left;
+        margin-left: 10px;
+        
+        &:first-child {
+          margin-left: 0;
+        }
+        
+        input[type=text], input[type=password], input[type=email], input[type=url], input[type=tel], textarea {
+          width: auto;
+        }
+        
+        label {
+          display: block;
+          width: 7.5em;
+          float: left;
+          font-size: 1.0em;
+          font-weight: bold;
+          color: $section-header-text-color;
+          abbr { border: none; color: #aaa; }
+        }
+
         .type_collection {
-          clear: both;
-          margin-left: 20px;
+          float: left;
           
-          & > div > div > label {
-            float: none;
+          & div div {
+            clear: left;
           }
           
           & > div > div > div {
             margin-left: 20px;
           }
+          
+          ul.actions {
+            clear: left;
+            display: block;
+            margin-top: 20px;
+          }
+        }
+        
+        div {
+          float: left;
+        }
+        
+        a.delete {
+          @extend .icon24; @include icons-sprite(button-cross);
         }
       }
     }
