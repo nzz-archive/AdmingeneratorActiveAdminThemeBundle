@@ -1,5 +1,7 @@
 // -------------------------------------- Active Admin Forms
 form {
+  margin:30px;
+  
   /* Reset margins & Padding */
   ul, ol, li, fieldset, legend, input, textarea, select, p { margin:0; padding:0; }
   ol, ul { list-style: none }
@@ -258,6 +260,8 @@ $sidebar-inner-content-width: $sidebar-width - ($section-padding * 2);
   }
 
 }
+
+.filters form { margin: 0 }
 
 // -------------------------------------- Filter Forms
 
