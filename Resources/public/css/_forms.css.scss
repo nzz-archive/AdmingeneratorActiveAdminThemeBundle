@@ -12,16 +12,10 @@ form {
     &.form_block {
       @include section-background;
       legend {
-        @include text-shadow;
-        color: $section-header-text-color;
-        padding: 0 10px 0;
-        font-size: 1.4em;
+        @include section-header;
+        display: block;
+        width: 99%;
       }
-    }
-
-    legend {
-      width: 100%;
-      span { display: block; @include section-header; }
     }
 
     .form_row {
