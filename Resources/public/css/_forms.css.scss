@@ -48,6 +48,7 @@ form {
           font-weight: bold;
           color: $section-header-text-color;
           abbr { border: none; color: #aaa; }
+          &.required { color: $required-color }
         }
 
         .type_collection {
