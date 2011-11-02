@@ -2,6 +2,10 @@
 
 AdmingeneratorActiveAdminTheme is a theme for the [AdmingeneratorGeneratorBundle](https://github.com/cedriclombardot/AdmingeneratorGeneratorBundle)
 
+## This skin in picture
+
+![Preview of list](https://github.com/cedriclombardot/AdmingeneratorActiveAdminThemeBundle/raw/master/Resources/doc/list-preview.png)
+
 ## Installation
 
 ````
