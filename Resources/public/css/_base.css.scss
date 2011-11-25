@@ -78,6 +78,10 @@ body {
     padding: 25px $horizontal-page-margin; 
   }
 
+  .full_size {
+      width: 95%;
+  }
+
   &.without_sidebar #main_content_wrapper #main_content{ margin-right: 0; }
 
   #sidebar { 
