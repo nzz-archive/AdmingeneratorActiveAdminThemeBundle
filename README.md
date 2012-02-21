@@ -9,7 +9,7 @@ AdmingeneratorActiveAdminTheme is a theme for the [AdmingeneratorGeneratorBundle
 ## Installation
 
 ````
-git submodule add git://github.com/cedriclombardot/AdmingeneratorGeneratorBundle.git vendor/bundles/Admingenerator/ActiveAdminThemeBundle
+git submodule add git://github.com/cedriclombardot/AdmingeneratorActiveAdminThemeBundle.git vendor/bundles/Admingenerator/ActiveAdminThemeBundle
 ````
 
 Add it to the `AppKernel` class:
