@@ -9,5 +9,9 @@
             "name": "Cedric LOMBARDOT",
             "email": "cedric.lombardot@gmail.com"
         }
-    ]
+    ],
+    "target-dir": "Admingenerator/ActiveAdminThemeBundle ",
+    "autoload": {
+        "psr-0": { "Admingenerator\\ActiveAdminThemeBundle": "" }
+    }
 }
