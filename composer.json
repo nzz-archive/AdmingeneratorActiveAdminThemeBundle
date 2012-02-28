@@ -1,5 +1,5 @@
 {
-    "name": "cedriclombardot/adminingenerator-activeadmintheme-bundle",
+    "name": "cedriclombardot/admingenerator-activeadmintheme-bundle",
     "description": "The rails admin theme for the symfony2 generator",
     "require": {
         "cedriclombardot/admingenerator-generator-bundle": "dev-master"
