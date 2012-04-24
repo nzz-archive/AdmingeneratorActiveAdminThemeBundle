@@ -239,6 +239,29 @@ form {
   }
 }
 
+.form_actions .delete {
+    background: none;
+    float: right;
+    @include gradient(red, #A20000);
+    border: medium none;
+    border-radius: 200px 200px 200px 200px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    color: #EFEFEF;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 3px;
+    padding: 0.6em 1.4em 0.5em 1.3em;
+    text-decoration: none;
+    text-shadow: 0 1px 0 black;
+    height: auto;
+    width: auto;
+}
+
+.form_actions .delete:hover {
+    @include gradient(#A20000, red);
+}
+
 // -------------------------------------- Sidebar Forms 
 
 $sidebar-inner-content-width: $sidebar-width - ($section-padding * 2);
