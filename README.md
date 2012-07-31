@@ -1,15 +1,15 @@
 # The rails admin theme for the symfony2 generator ![project status](http://stillmaintained.com/cedriclombardot/AdmingeneratorActiveAdminThemeBundle.png)#
 
-AdmingeneratorActiveAdminTheme is a theme for the [AdmingeneratorGeneratorBundle](https://github.com/cedriclombardot/AdmingeneratorGeneratorBundle)
+AdmingeneratorActiveAdminTheme is a theme for the [AdmingeneratorGeneratorBundle](https://github.com/symfony2admingenerator/AdmingeneratorGeneratorBundle)
 
 ## This skin in picture
 
-![Preview of list](https://github.com/cedriclombardot/AdmingeneratorActiveAdminThemeBundle/raw/master/Resources/doc/list-preview.png)
+![Preview of list](https://github.com/symfony2admingenerator/AdmingeneratorActiveAdminThemeBundle/raw/master/Resources/doc/list-preview.png)
 
 ## Installation
 
 ````
-git submodule add git://github.com/cedriclombardot/AdmingeneratorActiveAdminThemeBundle.git vendor/bundles/Admingenerator/ActiveAdminThemeBundle
+git submodule add git://github.com/symfony2admingenerator/AdmingeneratorActiveAdminThemeBundle.git vendor/bundles/Admingenerator/ActiveAdminThemeBundle
 ````
 
 Add it to the `AppKernel` class:
