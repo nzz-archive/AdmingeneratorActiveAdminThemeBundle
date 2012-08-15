@@ -1,8 +1,13 @@
 {
     "name": "cedriclombardot/admingenerator-activeadmintheme-bundle",
     "description": "The rails admin theme for the symfony2 generator",
+    "minimum-stability": "dev",
+    "type": "symfony-bundle",
+    "homepage": "http://symfony2admingenerator.org/",
+    "license": "MIT",
     "require": {
-        "cedriclombardot/admingenerator-generator-bundle": "*"
+        "cedriclombardot/admingenerator-generator-bundle": "*",
+	"cedriclombardot/admingenerator-oldtheme-bundle": "*"
     },
     "authors": [
         {
